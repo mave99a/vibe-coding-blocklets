@@ -1,0 +1,318 @@
+{
+  "id": "NrTj5lvdh8E9KmWp",
+  "createdAt": "2024-04-15T10:00:00.000Z",
+  "updatedAt": "2024-04-15T10:00:00.000Z",
+  "name": "EntertainmentCard",
+  "description": "A configurable entertainment news card component",
+  "properties": {
+    "xk47p2jmab93qrst": {
+      "index": 0,
+      "data": {
+        "id": "xk47p2jmab93qrst",
+        "key": "backgroundColor",
+        "type": "color",
+        "visible": true,
+        "locales": {
+          "zh": {
+            "name": "背景颜色",
+            "defaultValue": "rgba(246, 207, 235, 0.9)"
+          },
+          "en": {
+            "name": "Background Color",
+            "defaultValue": "rgba(246, 207, 235, 0.9)"
+          }
+        }
+      }
+    },
+    "ps91m5jnvc82zxdr": {
+      "index": 1,
+      "data": {
+        "id": "ps91m5jnvc82zxdr",
+        "key": "sectionTitle",
+        "type": "string",
+        "visible": true,
+        "locales": {
+          "zh": {
+            "name": "栏目标题",
+            "defaultValue": "ENTERTAINMENT"
+          },
+          "en": {
+            "name": "Section Title",
+            "defaultValue": "ENTERTAINMENT"
+          }
+        }
+      }
+    },
+    "qt73k8hpfd65vekl": {
+      "index": 2,
+      "data": {
+        "id": "qt73k8hpfd65vekl",
+        "key": "sectionLink",
+        "type": "url",
+        "visible": true,
+        "locales": {
+          "zh": {
+            "name": "栏目链接",
+            "defaultValue": {
+              "text": "查看全部",
+              "url": "#"
+            }
+          },
+          "en": {
+            "name": "Section Link",
+            "defaultValue": {
+              "text": "SEE ALL ENTERTAINMENT",
+              "url": "#"
+            }
+          }
+        },
+        "subProperties": {
+          "tr45y2kltu89oipm": {
+            "index": 0,
+            "data": {
+              "id": "tr45y2kltu89oipm",
+              "key": "text",
+              "type": "string",
+              "locales": {
+                "en": {
+                  "name": "Link Text"
+                },
+                "zh": {
+                  "name": "链接文本"
+                }
+              }
+            }
+          },
+          "yu67i3mopq23wsax": {
+            "index": 1,
+            "data": {
+              "id": "yu67i3mopq23wsax",
+              "key": "url",
+              "type": "string",
+              "locales": {
+                "en": {
+                  "name": "URL"
+                },
+                "zh": {
+                  "name": "URL"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "vx84n9josj72udxc": {
+      "index": 3,
+      "data": {
+        "id": "vx84n9josj72udxc",
+        "key": "mainArticle",
+        "type": "json",
+        "visible": true,
+        "locales": {
+          "zh": {
+            "name": "主要文章",
+            "defaultValue": {
+              "title": "Photo Mode is my new gaming obsession",
+              "author": "ASH PARRISH",
+              "date": "MAR 22",
+              "imageUrl": "https://example.com/image.jpg"
+            }
+          },
+          "en": {
+            "name": "Main Article",
+            "defaultValue": {
+              "title": "Photo Mode is my new gaming obsession",
+              "author": "ASH PARRISH",
+              "date": "MAR 22",
+              "imageUrl": "https://example.com/image.jpg"
+            }
+          }
+        },
+        "subProperties": {
+          "zb92c5lqhj47kedr": {
+            "index": 0,
+            "data": {
+              "id": "zb92c5lqhj47kedr",
+              "key": "title",
+              "type": "string",
+              "visible": true,
+              "locales": {
+                "zh": {
+                  "name": "标题"
+                },
+                "en": {
+                  "name": "Title"
+                }
+              }
+            }
+          },
+          "wt63h8ikpj54rdem": {
+            "index": 1,
+            "data": {
+              "id": "wt63h8ikpj54rdem",
+              "key": "author",
+              "type": "string",
+              "visible": true,
+              "locales": {
+                "zh": {
+                  "name": "作者"
+                },
+                "en": {
+                  "name": "Author"
+                }
+              }
+            }
+          },
+          "gp45j2kmtu78iqlx": {
+            "index": 2,
+            "data": {
+              "id": "gp45j2kmtu78iqlx",
+              "key": "date",
+              "type": "string",
+              "visible": true,
+              "locales": {
+                "zh": {
+                  "name": "日期"
+                },
+                "en": {
+                  "name": "Date"
+                }
+              }
+            }
+          },
+          "hr72k9jmtu36fpqz": {
+            "index": 3,
+            "data": {
+              "id": "hr72k9jmtu36fpqz",
+              "key": "imageUrl",
+              "type": "string",
+              "visible": true,
+              "locales": {
+                "zh": {
+                  "name": "图片链接"
+                },
+                "en": {
+                  "name": "Image URL"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "sz37p9klxc64qevm": {
+      "index": 4,
+      "data": {
+        "id": "sz37p9klxc64qevm",
+        "key": "relatedArticles",
+        "type": "array",
+        "visible": true,
+        "locales": {
+          "zh": {
+            "name": "相关文章",
+            "defaultValue": [
+              {
+                "title": "7 cool indie games from GDC 2025",
+                "authors": "JAY PETERS and ANDREW WEBSTER",
+                "date": "MAR 22"
+              },
+              {
+                "title": "Severance brought everything together in its season 2 finale",
+                "authors": "ANDREW WEBSTER",
+                "date": "MAR 21",
+                "commentCount": "63"
+              }
+            ]
+          },
+          "en": {
+            "name": "Related Articles",
+            "defaultValue": [
+              {
+                "title": "7 cool indie games from GDC 2025",
+                "authors": "JAY PETERS and ANDREW WEBSTER",
+                "date": "MAR 22"
+              },
+              {
+                "title": "Severance brought everything together in its season 2 finale",
+                "authors": "ANDREW WEBSTER",
+                "date": "MAR 21",
+                "commentCount": "63"
+              }
+            ]
+          }
+        },
+        "subProperties": {
+          "ab83c4lmnp56xevs": {
+            "index": 0,
+            "data": {
+              "id": "ab83c4lmnp56xevs",
+              "key": "title",
+              "type": "string",
+              "visible": true,
+              "locales": {
+                "zh": {
+                  "name": "标题"
+                },
+                "en": {
+                  "name": "Title"
+                }
+              }
+            }
+          },
+          "cd94f5hmrs67zevt": {
+            "index": 1,
+            "data": {
+              "id": "cd94f5hmrs67zevt",
+              "key": "authors",
+              "type": "string",
+              "visible": true,
+              "locales": {
+                "zh": {
+                  "name": "作者"
+                },
+                "en": {
+                  "name": "Authors"
+                }
+              }
+            }
+          },
+          "ef15g6hntu78ievq": {
+            "index": 2,
+            "data": {
+              "id": "ef15g6hntu78ievq",
+              "key": "date",
+              "type": "string",
+              "visible": true,
+              "locales": {
+                "zh": {
+                  "name": "日期"
+                },
+                "en": {
+                  "name": "Date"
+                }
+              }
+            }
+          },
+          "gh26h7ijvw89kewm": {
+            "index": 3,
+            "data": {
+              "id": "gh26h7ijvw89kewm",
+              "key": "commentCount",
+              "type": "string",
+              "visible": true,
+              "locales": {
+                "zh": {
+                  "name": "评论数"
+                },
+                "en": {
+                  "name": "Comment Count"
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+} 

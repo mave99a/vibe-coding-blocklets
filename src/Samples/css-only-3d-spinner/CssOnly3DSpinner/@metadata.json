@@ -1,0 +1,85 @@
+{
+  "id": "js3dspinnerxyz123",
+  "createdAt": "2024-03-23T08:57:00.000Z",
+  "updatedAt": "2025-03-24T03:22:21.145Z",
+  "name": "CSS Only 3D Spinner",
+  "description": "A pure CSS 3D spinner with configurable colors",
+  "properties": {
+    "bg6s7t4h2k9l3m5n": {
+      "index": 0,
+      "data": {
+        "id": "bg6s7t4h2k9l3m5n",
+        "key": "backgroundColor",
+        "type": "color",
+        "visible": true,
+        "locales": {
+          "zh": {
+            "name": "背景颜色",
+            "defaultValue": "#607d8b"
+          },
+          "en": {
+            "name": "Background Color",
+            "defaultValue": "#607d8b"
+          }
+        }
+      }
+    },
+    "sp1n3rc0l0r123456": {
+      "index": 1,
+      "data": {
+        "id": "sp1n3rc0l0r123456",
+        "key": "spinnerColor",
+        "type": "color",
+        "visible": true,
+        "locales": {
+          "zh": {
+            "name": "旋转器颜色",
+            "defaultValue": "linear-gradient(0deg, #f1f1f1, #bbb)"
+          },
+          "en": {
+            "name": "Spinner Color",
+            "defaultValue": "linear-gradient(0deg, #f1f1f1, #bbb)"
+          }
+        }
+      }
+    },
+    "sh4d0wc0l0r789012": {
+      "index": 2,
+      "data": {
+        "id": "sh4d0wc0l0r789012",
+        "key": "shadowColor",
+        "type": "color",
+        "visible": true,
+        "locales": {
+          "zh": {
+            "name": "阴影颜色",
+            "defaultValue": "#0009"
+          },
+          "en": {
+            "name": "Shadow Color",
+            "defaultValue": "#0009"
+          }
+        }
+      }
+    },
+    "sp1n3rsp33d345678": {
+      "index": 3,
+      "data": {
+        "id": "sp1n3rsp33d345678",
+        "key": "animationDuration",
+        "type": "number",
+        "visible": true,
+        "locales": {
+          "zh": {
+            "name": "动画持续时间 (秒)",
+            "defaultValue": 5
+          },
+          "en": {
+            "name": "Animation Duration (seconds)",
+            "defaultValue": 5
+          }
+        }
+      }
+    }
+  }
+}

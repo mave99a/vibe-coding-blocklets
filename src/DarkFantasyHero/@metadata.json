@@ -1,0 +1,135 @@
+{
+  "id": "DarkFantasyHero",
+  "createdAt": "2024-03-29T16:00:00.000Z",
+  "updatedAt": "2024-03-29T16:00:00.000Z",
+  "name": "Dark Fantasy Hero",
+  "description": "A dark fantasy themed hero section with atmospheric background and YouTube CTA",
+  "properties": {
+    "title": {
+      "index": 0,
+      "data": {
+        "id": "title",
+        "key": "title",
+        "type": "string",
+        "visible": true,
+        "locales": {
+          "zh": {
+            "name": "标题",
+            "defaultValue": "WLW ADULT ANIMATION SHORT"
+          },
+          "en": {
+            "name": "Title",
+            "defaultValue": "WLW ADULT ANIMATION SHORT"
+          }
+        }
+      }
+    },
+    "subtitle": {
+      "index": 1,
+      "data": {
+        "id": "subtitle",
+        "key": "subtitle",
+        "type": "string",
+        "visible": true,
+        "locales": {
+          "zh": {
+            "name": "副标题",
+            "defaultValue": "SET IN A DARK FANTASY PHILIPPINES"
+          },
+          "en": {
+            "name": "Subtitle",
+            "defaultValue": "SET IN A DARK FANTASY PHILIPPINES"
+          }
+        }
+      }
+    },
+    "studioName": {
+      "index": 2,
+      "data": {
+        "id": "studioName",
+        "key": "studioName",
+        "type": "string",
+        "visible": true,
+        "locales": {
+          "zh": {
+            "name": "工作室名称",
+            "defaultValue": "A FILM BY STUDIO HEARTBREAK"
+          },
+          "en": {
+            "name": "Studio Name",
+            "defaultValue": "A FILM BY STUDIO HEARTBREAK"
+          }
+        }
+      }
+    },
+    "description": {
+      "index": 3,
+      "data": {
+        "id": "description",
+        "key": "description",
+        "type": "string",
+        "visible": true,
+        "locales": {
+          "zh": {
+            "name": "描述",
+            "defaultValue": "45 SECONDS OF PURE ANIMATION TO SHOW YOU WHAT OUR TEAM IS CAPABLE OF!"
+          },
+          "en": {
+            "name": "Description",
+            "defaultValue": "45 SECONDS OF PURE ANIMATION TO SHOW YOU WHAT OUR TEAM IS CAPABLE OF!"
+          }
+        }
+      }
+    },
+    "youtubeUrl": {
+      "index": 4,
+      "data": {
+        "id": "youtubeUrl",
+        "key": "youtubeUrl",
+        "type": "url",
+        "visible": true,
+        "locales": {
+          "zh": {
+            "name": "YouTube链接",
+            "defaultValue": {
+              "url": "https://www.youtube.com/watch?v=example",
+              "mediaKitUrl": "https://www.youtube.com/watch?v=example"
+            }
+          },
+          "en": {
+            "name": "YouTube URL",
+            "defaultValue": {
+              "url": "https://www.youtube.com/watch?v=example",
+              "mediaKitUrl": "https://www.youtube.com/watch?v=example"
+            }
+          }
+        }
+      }
+    },
+    "backgroundImage": {
+      "index": 5,
+      "data": {
+        "id": "backgroundImage",
+        "key": "backgroundImage",
+        "type": "url",
+        "visible": true,
+        "locales": {
+          "zh": {
+            "name": "背景图片",
+            "defaultValue": {
+              "url": "https://images.unsplash.com/photo-1518709766631-a6a7f45921c3?q=80&w=2942&auto=format&fit=crop",
+              "mediaKitUrl": "https://images.unsplash.com/photo-1518709766631-a6a7f45921c3?q=80&w=2942&auto=format&fit=crop"
+            }
+          },
+          "en": {
+            "name": "Background Image",
+            "defaultValue": {
+              "url": "https://images.unsplash.com/photo-1518709766631-a6a7f45921c3?q=80&w=2942&auto=format&fit=crop",
+              "mediaKitUrl": "https://images.unsplash.com/photo-1518709766631-a6a7f45921c3?q=80&w=2942&auto=format&fit=crop"
+            }
+          }
+        }
+      }
+    }
+  }
+} 

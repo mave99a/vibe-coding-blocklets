@@ -1,0 +1,104 @@
+{
+  "id": "TerminalViewComponent",
+  "createdAt": "2024-03-21T10:00:00.000Z",
+  "updatedAt": "2025-03-29T23:56:35.010Z",
+  "name": "Terminal View",
+  "description": "A terminal-like view component with configurable text and appearance",
+  "properties": {
+    "terminalText": {
+      "index": 0,
+      "data": {
+        "id": "terminalText",
+        "key": "terminalText",
+        "type": "multiline",
+        "visible": true,
+        "locales": {
+          "zh": {
+            "name": "终端文本",
+            "defaultValue": "$ echo \"Hello World\"\nHello World\n$ _"
+          },
+          "en": {
+            "name": "Terminal Text",
+            "defaultValue": "$ echo \"Hello World\"\nHello World\n$ _"
+          }
+        }
+      }
+    },
+    "backgroundColor": {
+      "index": 1,
+      "data": {
+        "id": "backgroundColor",
+        "key": "backgroundColor",
+        "type": "color",
+        "visible": true,
+        "locales": {
+          "zh": {
+            "name": "背景颜色",
+            "defaultValue": "#2D2D2D"
+          },
+          "en": {
+            "name": "Background Color",
+            "defaultValue": "#2D2D2D"
+          }
+        }
+      }
+    },
+    "textColor": {
+      "index": 2,
+      "data": {
+        "id": "textColor",
+        "key": "textColor",
+        "type": "color",
+        "visible": true,
+        "locales": {
+          "zh": {
+            "name": "文本颜色",
+            "defaultValue": "#E0E0E0"
+          },
+          "en": {
+            "name": "Text Color",
+            "defaultValue": "#E0E0E0"
+          }
+        }
+      }
+    },
+    "fontSize": {
+      "index": 3,
+      "data": {
+        "id": "fontSize",
+        "key": "fontSize",
+        "type": "number",
+        "visible": true,
+        "locales": {
+          "zh": {
+            "name": "字体大小",
+            "defaultValue": 14
+          },
+          "en": {
+            "name": "Font Size",
+            "defaultValue": 14
+          }
+        }
+      }
+    },
+    "windowTitle": {
+      "index": 4,
+      "data": {
+        "id": "windowTitle",
+        "key": "windowTitle",
+        "type": "string",
+        "visible": true,
+        "locales": {
+          "zh": {
+            "name": "窗口标题",
+            "defaultValue": "terminal"
+          },
+          "en": {
+            "name": "Window Title",
+            "defaultValue": "terminal"
+          }
+        }
+      }
+    }
+  }
+}

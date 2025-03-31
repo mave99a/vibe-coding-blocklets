@@ -1,0 +1,21 @@
+html,
+body {
+	margin: 0;
+	padding: 0;
+}
+body {
+	padding: 0;
+	margin: 0;
+	display: grid;
+	place-items: center;
+	height: 100vh;
+	background-color: #f9a8d4;
+}
+css-doodle {
+	box-shadow: 0 4vmin 8vmin -4vmin;
+	width: 70vmin;
+	height: 70vmin;
+	margin: 0 auto;
+	padding: 5vmin;
+	background-color: black;
+}

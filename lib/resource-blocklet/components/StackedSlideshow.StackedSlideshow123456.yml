@@ -1,0 +1,518 @@
+id: StackedSlideshow123456
+createdAt: 2024-05-23T10:00:00.000Z
+updatedAt: 2025-03-24T06:03:58.280Z
+name: StackedSlideshow
+description: A stacked slideshow component with hover effects and navigation controls
+properties:
+  1a2b3c4d5e6f7g8h:
+    index: 0
+    data:
+      id: 1a2b3c4d5e6f7g8h
+      key: title
+      type: string
+      visible: true
+      locales:
+        zh:
+          name: 标题
+          defaultValue: 堆叠相册
+        en:
+          name: Title
+          defaultValue: Stacked Slideshow
+  2b3c4d5e6f7g8h9i:
+    index: 1
+    data:
+      id: 2b3c4d5e6f7g8h9i
+      key: slides
+      type: array
+      visible: true
+      locales:
+        zh:
+          name: 幻灯片
+          defaultValue:
+            - imageUrl: https://images.unsplash.com/photo-1682687219800-bba120d709c5
+              title: 产品 1
+              linkUrl: https://example.com/product1
+            - imageUrl: https://images.unsplash.com/photo-1682687982360-3fbab65f9d50
+              title: 产品 2
+              linkUrl: https://example.com/product2
+            - imageUrl: https://images.unsplash.com/photo-1682695796954-bad0d0f59ff1
+              title: 产品 3
+              linkUrl: https://example.com/product3
+            - imageUrl: https://images.unsplash.com/photo-1682686581362-796145f0e123
+              title: 产品 4
+              linkUrl: https://example.com/product4
+        en:
+          name: Slides
+          defaultValue:
+            - imageUrl: https://images.unsplash.com/photo-1682687219800-bba120d709c5
+              title: Product 1
+              linkUrl: https://example.com/product1
+            - imageUrl: https://images.unsplash.com/photo-1682687982360-3fbab65f9d50
+              title: Product 2
+              linkUrl: https://example.com/product2
+            - imageUrl: https://images.unsplash.com/photo-1682695796954-bad0d0f59ff1
+              title: Product 3
+              linkUrl: https://example.com/product3
+            - imageUrl: https://images.unsplash.com/photo-1682686581362-796145f0e123
+              title: Product 4
+              linkUrl: https://example.com/product4
+      subProperties:
+        3c4d5e6f7g8h9i0j:
+          index: 0
+          data:
+            id: 3c4d5e6f7g8h9i0j
+            key: imageUrl
+            type: string
+            visible: true
+            locales:
+              zh:
+                name: 图片 URL
+                defaultValue: ""
+              en:
+                name: Image URL
+                defaultValue: ""
+        4d5e6f7g8h9i0j1k:
+          index: 1
+          data:
+            id: 4d5e6f7g8h9i0j1k
+            key: title
+            type: string
+            visible: true
+            locales:
+              zh:
+                name: 标题
+                defaultValue: ""
+              en:
+                name: Title
+                defaultValue: ""
+        6f7g8h9i0j1k2l3m:
+          index: 2
+          data:
+            id: 6f7g8h9i0j1k2l3m
+            key: linkUrl
+            type: string
+            visible: true
+            locales:
+              zh:
+                name: 链接 URL
+                defaultValue: ""
+              en:
+                name: Link URL
+                defaultValue: ""
+  7g8h9i0j1k2l3m4n:
+    index: 2
+    data:
+      id: 7g8h9i0j1k2l3m4n
+      key: backgroundColor
+      type: color
+      visible: true
+      locales:
+        zh:
+          name: 背景颜色
+          defaultValue: "#F5F7FF"
+        en:
+          name: Background Color
+          defaultValue: "#F5F7FF"
+  8h9i0j1k2l3m4n5o:
+    index: 3
+    data:
+      id: 8h9i0j1k2l3m4n5o
+      key: navButtonColor
+      type: color
+      visible: true
+      locales:
+        zh:
+          name: 导航按钮颜色
+          defaultValue: "#6366F1"
+        en:
+          name: Navigation Button Color
+          defaultValue: "#6366F1"
+  9i0j1k2l3m4n5o6p:
+    index: 4
+    data:
+      id: 9i0j1k2l3m4n5o6p
+      key: maxWidth
+      type: number
+      visible: true
+      locales:
+        zh:
+          name: 最大宽度
+          defaultValue: 1200
+        en:
+          name: Max Width
+          defaultValue: 1200
+  0j1k2l3m4n5o6p7q:
+    index: 5
+    data:
+      id: 0j1k2l3m4n5o6p7q
+      key: cardBorderRadius
+      type: number
+      visible: true
+      locales:
+        zh:
+          name: 卡片圆角
+          defaultValue: 12
+        en:
+          name: Card Border Radius
+          defaultValue: 12
+  1k2l3m4n5o6p7q8r:
+    index: 6
+    data:
+      id: 1k2l3m4n5o6p7q8r
+      key: animationDuration
+      type: number
+      visible: true
+      locales:
+        zh:
+          name: 动画持续时间（毫秒）
+          defaultValue: 400
+        en:
+          name: Animation Duration (ms)
+          defaultValue: 400
+  3m4n5o6p7q8r9s0t:
+    index: 7
+    data:
+      id: 3m4n5o6p7q8r9s0t
+      key: aspectRatio
+      type: string
+      visible: true
+      locales:
+        zh:
+          name: 图片比例
+          defaultValue: 4:3
+        en:
+          name: Image Aspect Ratio
+          defaultValue: 4:3
+      valueEnums:
+        - value: 1:1
+          label:
+            zh: 1:1 (正方形)
+            en: 1:1 (Square)
+        - value: 4:3
+          label:
+            zh: 4:3 (标准)
+            en: 4:3 (Standard)
+        - value: 3:4
+          label:
+            zh: 3:4 (竖版)
+            en: 3:4 (Portrait)
+        - value: 16:9
+          label:
+            zh: 16:9 (宽屏)
+            en: 16:9 (Widescreen)
+  4n5o6p7q8r9s0t1u:
+    index: 8
+    data:
+      id: 4n5o6p7q8r9s0t1u
+      key: cardRotation
+      type: number
+      visible: true
+      locales:
+        zh:
+          name: 卡片旋转角度
+          defaultValue: 2
+        en:
+          name: Card Rotation Angle
+          defaultValue: 2
+  5o6p7q8r9s0t1u2v:
+    index: 9
+    data:
+      id: 5o6p7q8r9s0t1u2v
+      key: autoSlideshow
+      type: boolean
+      visible: true
+      locales:
+        zh:
+          name: 启用自动播放
+          defaultValue: false
+        en:
+          name: Enable Auto Slideshow
+          defaultValue: false
+  6p7q8r9s0t1u2v3w:
+    index: 10
+    data:
+      id: 6p7q8r9s0t1u2v3w
+      key: slideshowInterval
+      type: number
+      visible: true
+      locales:
+        zh:
+          name: 播放间隔时间（毫秒）
+          defaultValue: 2000
+        en:
+          name: Slideshow Interval (ms)
+          defaultValue: 2000
+renderer:
+  script: |
+    var __rest = (this && this.__rest) || function (s, e) {
+        var t = {};
+        for (var p in s) if (Object.prototype.hasOwnProperty.call(s, p) && e.indexOf(p) < 0)
+            t[p] = s[p];
+        if (s != null && typeof Object.getOwnPropertySymbols === "function")
+            for (var i = 0, p = Object.getOwnPropertySymbols(s); i < p.length; i++) {
+                if (e.indexOf(p[i]) < 0 && Object.prototype.propertyIsEnumerable.call(s, p[i]))
+                    t[p[i]] = s[p[i]];
+            }
+        return t;
+    };
+    const r = (await __PAGES_KIT_BUILTIN_MODULES__.require("./_chunks/jsx-dev-runtime-BxWMfLy0.js")).j;
+    const l = __PAGES_KIT_BUILTIN_MODULES__.require("@blocklet/pages-kit/builtin/react").useState;
+    const $ = __PAGES_KIT_BUILTIN_MODULES__.require("@blocklet/pages-kit/builtin/react").useRef;
+    const x = __PAGES_KIT_BUILTIN_MODULES__.require("@blocklet/pages-kit/builtin/react").useEffect;
+    function oe({ title: g = "Stacked Slideshow", slides: a = [], navButtonColor: k = "#6366F1", maxWidth: V = 1200, cardBorderRadius: T = 12, animationDuration: h = 400, aspectRatio: W = "4:3", cardRotation: O = 2, autoSlideshow: w = !1, slideshowInterval: S = 2e3 }) {
+        const s = a && a.length > 0 ? a : [], [m, b] = l([]), [c, d] = l(!1), [z, N] = l(null), [v, j] = l(null), [y, i] = l(!1), u = $(null), n = $(null);
+        x(() => {
+            b(Array.from({ length: s.length }, (e, t) => t));
+        }, [s.length]), x(() => {
+            const e = () => {
+                w && !y && !c && s.length > 1 && (n.current = setTimeout(() => {
+                    E();
+                }, S));
+            };
+            return n.current && (clearTimeout(n.current), n.current = null), e(), () => {
+                n.current && clearTimeout(n.current);
+            };
+        }, [w, y, c, s.length, m, S]), x(() => () => {
+            u.current && clearTimeout(u.current), n.current && clearTimeout(n.current);
+        }, []);
+        const f = (() => {
+            let t;
+            switch (W) {
+                case "1:1":
+                    t = 350;
+                    break;
+                case "4:3":
+                    t = 350 * 3 / 4;
+                    break;
+                case "3:4":
+                    t = 350 * 4 / 3;
+                    break;
+                case "16:9":
+                    t = 350 * 9 / 16;
+                    break;
+                default:
+                    t = 350 * 3 / 4;
+            }
+            return { width: 350, height: t };
+        })(), B = () => {
+            c || s.length <= 1 || (d(!0), b((e) => {
+                const t = [...e];
+                return [t.pop(), ...t];
+            }), u.current = setTimeout(() => {
+                d(!1);
+            }, h));
+        }, E = () => {
+            c || s.length <= 1 || (d(!0), b((e) => {
+                const t = [...e], o = t.shift();
+                return [...t, o];
+            }), u.current = setTimeout(() => {
+                d(!1);
+            }, h));
+        }, H = {
+            fontFamily: '-apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif',
+            maxWidth: `${V}px`,
+            margin: "0 auto",
+            padding: "2rem",
+            position: "relative",
+            overflow: "hidden"
+        }, A = {
+            fontSize: "2rem",
+            fontWeight: 700,
+            textAlign: "center",
+            marginBottom: "2.5rem",
+            color: "#333"
+        }, F = {
+            position: "relative",
+            height: `${f.height + 60}px`,
+            // Reduced height for smaller title area
+            width: "100%",
+            display: "flex",
+            alignItems: "center",
+            justifyContent: "center",
+            perspective: "1000px"
+        }, C = (e) => {
+            const t = e ? v === "left" : v === "right";
+            return {
+                position: "absolute",
+                top: "50%",
+                left: e ? "10px" : "auto",
+                right: e ? "auto" : "10px",
+                transform: t ? "translateY(-50%) scale(1.1)" : "translateY(-50%)",
+                width: "48px",
+                height: "48px",
+                borderRadius: "50%",
+                backgroundColor: t ? `${k}dd` : k,
+                color: "white",
+                display: "flex",
+                alignItems: "center",
+                justifyContent: "center",
+                border: "none",
+                cursor: "pointer",
+                boxShadow: "0 4px 10px rgba(0, 0, 0, 0.2)",
+                zIndex: 20,
+                fontSize: "24px",
+                transition: "transform 0.2s ease, background-color 0.2s ease"
+            };
+        }, M = {
+            width: "12px",
+            height: "12px",
+            border: "solid white",
+            borderWidth: "0 3px 3px 0",
+            padding: "3px"
+        }, L = (e) => {
+            const t = s.length, o = e === 0, p = {
+                position: "absolute",
+                width: `${f.width}px`,
+                borderRadius: `${T}px`,
+                backgroundColor: "white",
+                boxShadow: "0 10px 30px rgba(0, 0, 0, 0.08)",
+                overflow: "hidden",
+                border: "1px solid rgba(0, 0, 0, 0.05)",
+                transition: `all ${h / 1e3}s cubic-bezier(0.25, 0.1, 0.25, 1.0)`,
+                transformOrigin: "center center",
+                cursor: "pointer",
+                zIndex: t - e
+            };
+            if (o && z === m[e])
+                Object.assign(p, {
+                    transform: "scale(1.05) translateZ(20px)",
+                    boxShadow: "0 20px 40px rgba(0, 0, 0, 0.15)"
+                });
+            else {
+                const G = e * 10, J = e * 8, K = 1 - e * 0.05, Q = e * O - 2;
+                Object.assign(p, {
+                    transform: `translateX(${G}px) translateY(${J}px) scale(${K}) rotate(${Q}deg)`,
+                    filter: `brightness(${1 - e * 0.1})`
+                });
+            }
+            return p;
+        }, R = {
+            width: "100%",
+            height: `${f.height}px`,
+            objectFit: "cover",
+            display: "block"
+        }, Y = {
+            padding: "0.4rem 0.6rem",
+            backgroundColor: "white"
+        }, P = {
+            margin: 0,
+            fontSize: "0.9rem",
+            fontWeight: 600,
+            whiteSpace: "nowrap",
+            overflow: "hidden",
+            textOverflow: "ellipsis"
+        }, _ = (e) => {
+            N(e), i(!0);
+        }, I = () => {
+            N(null), i(!1);
+        }, U = (e) => {
+            j(e), i(!0);
+        }, D = () => {
+            j(null), i(!1);
+        }, X = (e) => {
+            e && window.open(e, "_blank");
+        }, Z = () => {
+            i(!0);
+        }, q = () => {
+            i(!1);
+        };
+        return /* @__PURE__ */ r.jsxDEV("div", { style: H, children: [
+                /* @__PURE__ */ r.jsxDEV("h2", { style: A, children: g }, void 0, !1, {
+                    fileName: "/Users/robmao/work/arcblock/test project/src/StackedSlideshow/index.tsx",
+                    lineNumber: 332,
+                    columnNumber: 7
+                }, this),
+                /* @__PURE__ */ r.jsxDEV("div", {
+                    style: F,
+                    onMouseEnter: Z,
+                    onMouseLeave: q,
+                    children: [
+                        s.length > 0 && m.map((e, t) => {
+                            const o = s[e];
+                            return o ? /* @__PURE__ */ r.jsxDEV("div", {
+                                style: L(t),
+                                onClick: () => X(o.linkUrl),
+                                onMouseEnter: () => _(e),
+                                onMouseLeave: I,
+                                children: [
+                                    /* @__PURE__ */ r.jsxDEV("img", {
+                                        src: o.imageUrl,
+                                        alt: o.title || `Slide ${e + 1}`,
+                                        style: R
+                                    }, void 0, !1, {
+                                        fileName: "/Users/robmao/work/arcblock/test project/src/StackedSlideshow/index.tsx",
+                                        lineNumber: 352,
+                                        columnNumber: 15
+                                    }, this),
+                                    o.title && /* @__PURE__ */ r.jsxDEV("div", { style: Y, children: /* @__PURE__ */ r.jsxDEV("h3", { style: P, children: o.title }, void 0, !1, {
+                                            fileName: "/Users/robmao/work/arcblock/test project/src/StackedSlideshow/index.tsx",
+                                            lineNumber: 359,
+                                            columnNumber: 19
+                                        }, this) }, void 0, !1, {
+                                        fileName: "/Users/robmao/work/arcblock/test project/src/StackedSlideshow/index.tsx",
+                                        lineNumber: 358,
+                                        columnNumber: 17
+                                    }, this)
+                                ]
+                            }, e, !0, {
+                                fileName: "/Users/robmao/work/arcblock/test project/src/StackedSlideshow/index.tsx",
+                                lineNumber: 345,
+                                columnNumber: 13
+                            }, this) : null;
+                        }),
+                        s.length > 1 && /* @__PURE__ */ r.jsxDEV(r.Fragment, { children: [
+                                /* @__PURE__ */ r.jsxDEV("button", {
+                                    onClick: B,
+                                    style: C(!0),
+                                    onMouseEnter: () => U("left"),
+                                    onMouseLeave: D,
+                                    "aria-label": "Previous slide",
+                                    children: /* @__PURE__ */ r.jsxDEV("div", { style: Object.assign(Object.assign({}, M), { transform: "rotate(135deg)" }) }, void 0, !1, {
+                                        fileName: "/Users/robmao/work/arcblock/test project/src/StackedSlideshow/index.tsx",
+                                        lineNumber: 376,
+                                        columnNumber: 15
+                                    }, this)
+                                }, void 0, !1, {
+                                    fileName: "/Users/robmao/work/arcblock/test project/src/StackedSlideshow/index.tsx",
+                                    lineNumber: 369,
+                                    columnNumber: 13
+                                }, this),
+                                /* @__PURE__ */ r.jsxDEV("button", {
+                                    onClick: E,
+                                    style: C(!1),
+                                    onMouseEnter: () => U("right"),
+                                    onMouseLeave: D,
+                                    "aria-label": "Next slide",
+                                    children: /* @__PURE__ */ r.jsxDEV("div", { style: Object.assign(Object.assign({}, M), { transform: "rotate(-45deg)" }) }, void 0, !1, {
+                                        fileName: "/Users/robmao/work/arcblock/test project/src/StackedSlideshow/index.tsx",
+                                        lineNumber: 386,
+                                        columnNumber: 15
+                                    }, this)
+                                }, void 0, !1, {
+                                    fileName: "/Users/robmao/work/arcblock/test project/src/StackedSlideshow/index.tsx",
+                                    lineNumber: 379,
+                                    columnNumber: 13
+                                }, this)
+                            ] }, void 0, !0, {
+                            fileName: "/Users/robmao/work/arcblock/test project/src/StackedSlideshow/index.tsx",
+                            lineNumber: 368,
+                            columnNumber: 11
+                        }, this)
+                    ]
+                }, void 0, !0, {
+                    fileName: "/Users/robmao/work/arcblock/test project/src/StackedSlideshow/index.tsx",
+                    lineNumber: 334,
+                    columnNumber: 7
+                }, this)
+            ] }, void 0, !0, {
+            fileName: "/Users/robmao/work/arcblock/test project/src/StackedSlideshow/index.tsx",
+            lineNumber: 331,
+            columnNumber: 5
+        }, this);
+    }
+    const se = (_a) => {
+        var { onChange: g } = _a, a = __rest(_a, ["onChange"]);
+        return null;
+    };
+    export { se as EditComponent, oe as default };
+  type: react-component

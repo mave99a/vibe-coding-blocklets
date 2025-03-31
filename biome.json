@@ -21,8 +21,7 @@
         "noNoninteractiveElementToInteractiveRole": "off",
         "useKeyWithClickEvents": "off",
         "useValidAnchor": "off",
-        "noSvgWithoutTitle": "off",
-        "useMouseEvents": "off"
+        "noSvgWithoutTitle": "off"
       }
     },
     "ignore": ["**/node_modules/**", "*.md"]

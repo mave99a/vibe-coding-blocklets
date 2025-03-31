@@ -1,0 +1,484 @@
+{
+  "id": "LxsrEuDkPjQwYmBn",
+  "createdAt": "2024-03-23T07:30:00.000Z",
+  "updatedAt": "2025-03-23T07:59:29.419Z",
+  "name": "SlotMachine",
+  "description": "A customizable slot machine component",
+  "properties": {
+    "abcdefghi1234567": {
+      "index": 0,
+      "data": {
+        "id": "abcdefghi1234567",
+        "key": "title",
+        "type": "string",
+        "visible": true,
+        "locales": {
+          "zh": {
+            "name": "标题",
+            "defaultValue": "老虎机"
+          },
+          "en": {
+            "name": "Title",
+            "defaultValue": "Slot Machine"
+          }
+        }
+      }
+    },
+    "abcdefghi1234568": {
+      "index": 1,
+      "data": {
+        "id": "abcdefghi1234568",
+        "key": "reelCount",
+        "type": "number",
+        "visible": true,
+        "locales": {
+          "zh": {
+            "name": "转轮数量",
+            "defaultValue": 3
+          },
+          "en": {
+            "name": "Reel Count",
+            "defaultValue": 3
+          }
+        }
+      }
+    },
+    "abcdefghi1234569": {
+      "index": 2,
+      "data": {
+        "id": "abcdefghi1234569",
+        "key": "spinSpeed",
+        "type": "number",
+        "visible": true,
+        "locales": {
+          "zh": {
+            "name": "旋转速度",
+            "defaultValue": 300
+          },
+          "en": {
+            "name": "Spin Speed",
+            "defaultValue": 300
+          }
+        }
+      }
+    },
+    "abcdefghi1234570": {
+      "index": 3,
+      "data": {
+        "id": "abcdefghi1234570",
+        "key": "autoSpin",
+        "type": "boolean",
+        "visible": true,
+        "locales": {
+          "zh": {
+            "name": "自动旋转",
+            "defaultValue": false
+          },
+          "en": {
+            "name": "Auto Spin",
+            "defaultValue": false
+          }
+        }
+      }
+    },
+    "abcdefghi1234571": {
+      "index": 4,
+      "data": {
+        "id": "abcdefghi1234571",
+        "key": "symbolSize",
+        "type": "number",
+        "visible": true,
+        "locales": {
+          "zh": {
+            "name": "符号大小",
+            "defaultValue": 70
+          },
+          "en": {
+            "name": "Symbol Size",
+            "defaultValue": 70
+          }
+        }
+      }
+    },
+    "abcdefghi1234581": {
+      "index": 5,
+      "data": {
+        "id": "abcdefghi1234581",
+        "key": "winProbability",
+        "type": "number",
+        "visible": true,
+        "locales": {
+          "zh": {
+            "name": "中奖概率分母",
+            "defaultValue": 10
+          },
+          "en": {
+            "name": "Win Probability Denominator",
+            "defaultValue": 10
+          }
+        }
+      }
+    },
+    "abcdefghi1234582": {
+      "index": 6,
+      "data": {
+        "id": "abcdefghi1234582",
+        "key": "soundEnabled",
+        "type": "boolean",
+        "visible": true,
+        "locales": {
+          "zh": {
+            "name": "启用声音",
+            "defaultValue": true
+          },
+          "en": {
+            "name": "Enable Sound",
+            "defaultValue": true
+          }
+        }
+      }
+    },
+    "abcdefghi1234572": {
+      "index": 7,
+      "data": {
+        "id": "abcdefghi1234572",
+        "key": "machineColor",
+        "type": "color",
+        "visible": true,
+        "locales": {
+          "zh": {
+            "name": "机器颜色",
+            "defaultValue": "#e74c3c"
+          },
+          "en": {
+            "name": "Machine Color",
+            "defaultValue": ""
+          }
+        }
+      }
+    },
+    "abcdefghi1234573": {
+      "index": 8,
+      "data": {
+        "id": "abcdefghi1234573",
+        "key": "reelColor",
+        "type": "color",
+        "visible": true,
+        "locales": {
+          "zh": {
+            "name": "转轮颜色",
+            "defaultValue": "#f8f9fa"
+          },
+          "en": {
+            "name": "Reel Color",
+            "defaultValue": ""
+          }
+        }
+      }
+    },
+    "abcdefghi1234574": {
+      "index": 9,
+      "data": {
+        "id": "abcdefghi1234574",
+        "key": "leverColor",
+        "type": "color",
+        "visible": true,
+        "locales": {
+          "zh": {
+            "name": "拉杆颜色",
+            "defaultValue": "#f1c40f"
+          },
+          "en": {
+            "name": "Lever Color",
+            "defaultValue": ""
+          }
+        }
+      }
+    },
+    "abcdefghi1234575": {
+      "index": 10,
+      "data": {
+        "id": "abcdefghi1234575",
+        "key": "symbols",
+        "type": "array",
+        "visible": true,
+        "locales": {
+          "zh": {
+            "name": "符号设置",
+            "defaultValue": [
+              {
+                "symbol": "🍒",
+                "weight": 10
+              },
+              {
+                "symbol": "🍊",
+                "weight": 8
+              },
+              {
+                "symbol": "🍋",
+                "weight": 8
+              },
+              {
+                "symbol": "🍇",
+                "weight": 6
+              },
+              {
+                "symbol": "🍉",
+                "weight": 5
+              },
+              {
+                "symbol": "🍓",
+                "weight": 4
+              },
+              {
+                "symbol": "🥝",
+                "weight": 3
+              },
+              {
+                "symbol": "💎",
+                "weight": 2
+              },
+              {
+                "symbol": "7️⃣",
+                "weight": 1
+              }
+            ]
+          },
+          "en": {
+            "name": "Symbols",
+            "defaultValue": [
+              {
+                "symbol": "🍒",
+                "weight": 10
+              },
+              {
+                "symbol": "🍊",
+                "weight": 8
+              },
+              {
+                "symbol": "🍋",
+                "weight": 8
+              },
+              {
+                "symbol": "🍇",
+                "weight": 6
+              },
+              {
+                "symbol": "🍉",
+                "weight": 5
+              },
+              {
+                "symbol": "🍓",
+                "weight": 4
+              },
+              {
+                "symbol": "🥝",
+                "weight": 3
+              },
+              {
+                "symbol": "💎",
+                "weight": 2
+              },
+              {
+                "symbol": "7️⃣",
+                "weight": 1
+              }
+            ]
+          }
+        },
+        "subProperties": {
+          "abcdefghi1234576": {
+            "index": 0,
+            "data": {
+              "id": "abcdefghi1234576",
+              "key": "symbol",
+              "type": "string",
+              "visible": true,
+              "locales": {
+                "zh": {
+                  "name": "符号",
+                  "defaultValue": ""
+                },
+                "en": {
+                  "name": "Symbol",
+                  "defaultValue": ""
+                }
+              }
+            }
+          },
+          "abcdefghi1234577": {
+            "index": 1,
+            "data": {
+              "id": "abcdefghi1234577",
+              "key": "weight",
+              "type": "number",
+              "visible": true,
+              "locales": {
+                "zh": {
+                  "name": "权重",
+                  "defaultValue": 1
+                },
+                "en": {
+                  "name": "Weight",
+                  "defaultValue": 1
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "abcdefghi1234578": {
+      "index": 11,
+      "data": {
+        "id": "abcdefghi1234578",
+        "key": "payouts",
+        "type": "array",
+        "visible": true,
+        "locales": {
+          "zh": {
+            "name": "赔率设置",
+            "defaultValue": [
+              {
+                "symbol": "🍒",
+                "multiplier": 2
+              },
+              {
+                "symbol": "🍊",
+                "multiplier": 3
+              },
+              {
+                "symbol": "🍋",
+                "multiplier": 3
+              },
+              {
+                "symbol": "🍇",
+                "multiplier": 5
+              },
+              {
+                "symbol": "🍉",
+                "multiplier": 7
+              },
+              {
+                "symbol": "🍓",
+                "multiplier": 10
+              },
+              {
+                "symbol": "🥝",
+                "multiplier": 15
+              },
+              {
+                "symbol": "💎",
+                "multiplier": 30
+              },
+              {
+                "symbol": "7️⃣",
+                "multiplier": 50
+              }
+            ]
+          },
+          "en": {
+            "name": "Payout Rates",
+            "defaultValue": [
+              {
+                "symbol": "🍒",
+                "multiplier": 2
+              },
+              {
+                "symbol": "🍊",
+                "multiplier": 3
+              },
+              {
+                "symbol": "🍋",
+                "multiplier": 3
+              },
+              {
+                "symbol": "🍇",
+                "multiplier": 5
+              },
+              {
+                "symbol": "🍉",
+                "multiplier": 7
+              },
+              {
+                "symbol": "🍓",
+                "multiplier": 10
+              },
+              {
+                "symbol": "🥝",
+                "multiplier": 15
+              },
+              {
+                "symbol": "💎",
+                "multiplier": 30
+              },
+              {
+                "symbol": "7️⃣",
+                "multiplier": 50
+              }
+            ]
+          }
+        },
+        "subProperties": {
+          "abcdefghi1234579": {
+            "index": 0,
+            "data": {
+              "id": "abcdefghi1234579",
+              "key": "symbol",
+              "type": "string",
+              "visible": true,
+              "locales": {
+                "zh": {
+                  "name": "符号",
+                  "defaultValue": ""
+                },
+                "en": {
+                  "name": "Symbol",
+                  "defaultValue": ""
+                }
+              }
+            }
+          },
+          "abcdefghi1234580": {
+            "index": 1,
+            "data": {
+              "id": "abcdefghi1234580",
+              "key": "multiplier",
+              "type": "number",
+              "visible": true,
+              "locales": {
+                "zh": {
+                  "name": "赔率倍数",
+                  "defaultValue": 1
+                },
+                "en": {
+                  "name": "Multiplier",
+                  "defaultValue": 1
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "abcdefghi1234588": {
+      "index": 12,
+      "data": {
+        "id": "abcdefghi1234588",
+        "key": "locale",
+        "type": "string",
+        "visible": true,
+        "locales": {
+          "zh": {
+            "name": "语言",
+            "defaultValue": "zh"
+          },
+          "en": {
+            "name": "Language",
+            "defaultValue": "en"
+          }
+        }
+      }
+    }
+  }
+}

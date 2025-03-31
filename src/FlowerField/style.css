@@ -1,0 +1,330 @@
+.garden-container {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+  background: linear-gradient(
+    to bottom,
+    #030614 0%,
+    #0a1128 25%,
+    #172449 50%,
+    #1f2e58 75%,
+    #28334f 100%
+  );
+}
+
+.night-sky {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0.7;
+  background: radial-gradient(
+    circle at 50% 10%,
+    rgba(64, 80, 130, 0.5),
+    transparent 60%
+  );
+  z-index: 0;
+}
+
+.stars {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 70%;
+  z-index: 0;
+}
+
+.star {
+  position: absolute;
+  background-color: white;
+  border-radius: 50%;
+  opacity: 0;
+  animation: twinkle var(--twinkle-duration, 3s) ease-in-out infinite;
+  animation-delay: var(--twinkle-delay, 0s);
+}
+
+.clouds {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 60%;
+  z-index: 0;
+}
+
+.cloud {
+  position: absolute;
+  background-color: rgba(30, 40, 60, 0.6);
+  border-radius: 50%;
+  filter: blur(20px);
+  z-index: 0;
+}
+
+.garden {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  z-index: 2;
+}
+
+.ground {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 50%;
+  background: linear-gradient(to bottom, #2d1d15, #211510);
+  z-index: 1;
+  overflow: hidden;
+  border-radius: 50% 70% 0 0 / 40px;
+  box-shadow: 0 -10px 30px rgba(0, 0, 0, 0.3);
+  transform-origin: bottom;
+}
+
+.ground::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: url("data:image/svg+xml,%3Csvg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noise'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.7' numOctaves='5' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noise)' opacity='0.2'/%3E%3C/svg%3E");
+  opacity: 0.5;
+}
+
+.flower {
+  position: absolute;
+  transform-origin: bottom center;
+  z-index: 2;
+  --scale: 1;
+  width: 30px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.flower-head {
+  position: relative;
+  z-index: 3;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.stem {
+  position: absolute;
+  bottom: 0;
+  width: 4px;
+  background: linear-gradient(to top,
+    #2e5d20 0%,
+    #5cad4a 50%,
+    #2e5d20 100%
+  );
+  border-radius: 2px;
+  transform-origin: bottom center;
+  height: 0;
+  transition: height 1s cubic-bezier(0.2, 0.8, 0.2, 1);
+  box-shadow: 0 0 4px rgba(0, 0, 0, 0.3);
+  z-index: 1;
+}
+
+.stem::after {
+  content: "";
+  position: absolute;
+  bottom: -5px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 10px;
+  height: 6px;
+  background: radial-gradient(
+    ellipse at center,
+    rgba(40, 25, 15, 0.8) 0%,
+    rgba(40, 25, 15, 0) 70%
+  );
+  border-radius: 50%;
+  opacity: 0.8;
+}
+
+.stem.curved {
+  border-radius: 50%;
+}
+
+@keyframes stemBend {
+  0% {
+    transform: perspective(500px) rotateX(0deg)
+      rotateY(var(--bend-rotation-neg, -1deg)) rotateZ(0deg);
+  }
+  50% {
+    transform: perspective(500px) rotateX(0deg)
+      rotateY(var(--bend-rotation-pos, 1deg)) rotateZ(0deg);
+  }
+  100% {
+    transform: perspective(500px) rotateX(0deg)
+      rotateY(var(--bend-rotation-neg, -1deg)) rotateZ(0deg);
+  }
+}
+
+.petal {
+  position: absolute;
+  transform-origin: center bottom;
+  opacity: 0;
+  transform: scale(0);
+  transition: transform 0.5s cubic-bezier(0.34, 1.56, 0.64, 1), opacity 0.5s ease;
+}
+
+.petal.type1 {
+  border-radius: 50% 50% 50% 0;
+}
+.petal.type2 {
+  border-radius: 80% 0 80% 0;
+}
+.petal.type3 {
+  border-radius: 0 50% 50% 50%;
+}
+.petal.type4 {
+  border-radius: 50% 20% 50% 20%;
+}
+.petal.type5 {
+  border-radius: 0 100% 50% 50%;
+}
+
+.center {
+  position: absolute;
+  border-radius: 50%;
+  opacity: 0;
+  transform: scale(0);
+  transition: all 0.5s cubic-bezier(0.34, 1.56, 0.64, 1);
+}
+
+.leaf {
+  position: absolute;
+  transform-origin: 0 50%;
+  opacity: 0;
+  transform: scale(0);
+  transition: all 0.5s cubic-bezier(0.34, 1.56, 0.64, 1);
+  width: 20px;
+  height: 10px;
+}
+
+.leaf-shape {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  transform-origin: 0 50%;
+  overflow: hidden;
+  background-color: #4a9e35;
+}
+
+.leaf-stem {
+  position: absolute;
+  height: 2px;
+  top: 50%;
+  left: -4px;
+  transform: translateY(-50%);
+  width: 4px;
+}
+
+.main-vein {
+  position: absolute;
+  top: 50%;
+  left: 0;
+  width: 100%;
+  height: 1px;
+  transform: translateY(-50%);
+}
+
+.side-vein {
+  position: absolute;
+  width: 80%;
+  height: 1px;
+  transform-origin: left;
+}
+
+.firefly {
+  position: absolute;
+  border-radius: 50%;
+  filter: blur(1px);
+  box-shadow: 0 0 10px currentColor;
+  color: var(--firefly-color, #ffea00);
+  z-index: 3;
+}
+
+@keyframes sway {
+  0% {
+    transform: scale(var(--scale)) rotate(calc(var(--sway-amount) * -1));
+  }
+  50% {
+    transform: scale(var(--scale)) rotate(var(--sway-amount));
+  }
+  100% {
+    transform: scale(var(--scale)) rotate(calc(var(--sway-amount) * -1));
+  }
+}
+
+@keyframes fireflyFloat {
+  0% {
+    transform: translate(0, 0);
+    opacity: 0.3;
+  }
+  25% {
+    transform: translate(20px, -30px);
+    opacity: 0.8;
+  }
+  50% {
+    transform: translate(40px, 0);
+    opacity: 0.3;
+  }
+  75% {
+    transform: translate(20px, 30px);
+    opacity: 0.8;
+  }
+  100% {
+    transform: translate(0, 0);
+    opacity: 0.3;
+  }
+}
+
+@keyframes twinkle {
+  0% {
+    opacity: var(--min-opacity, 0.2);
+  }
+  50% {
+    opacity: var(--max-opacity, 0.6);
+  }
+  100% {
+    opacity: var(--min-opacity, 0.2);
+  }
+}
+
+@keyframes cloudDrift {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(var(--drift-distance, 100vw));
+  }
+}
+
+@keyframes leafSway {
+  0% {
+    transform: rotate(0deg);
+  }
+  50% {
+    transform: rotate(5deg);
+  }
+  100% {
+    transform: rotate(0deg);
+  }
+}
+
+@keyframes fadeOut {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
+  }
+} 

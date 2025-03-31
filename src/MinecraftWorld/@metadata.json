@@ -1,0 +1,104 @@
+{
+  "id": "KEHGy3vdflE8JGrV",
+  "createdAt": "2024-03-29T16:01:56.655Z",
+  "updatedAt": "2024-03-29T16:01:56.655Z",
+  "name": "MinecraftWorld",
+  "description": "A cool 3D Minecraft-like world card with animations",
+  "properties": {
+    "gs1rn5jmxfvpxptx": {
+      "index": 0,
+      "data": {
+        "id": "gs1rn5jmxfvpxptx",
+        "key": "title",
+        "type": "string",
+        "visible": true,
+        "locales": {
+          "zh": {
+            "name": "标题",
+            "defaultValue": "我的世界"
+          },
+          "en": {
+            "name": "Title",
+            "defaultValue": "My World"
+          }
+        }
+      }
+    },
+    "9ajrz12ik7esfk1z": {
+      "index": 1,
+      "data": {
+        "id": "9ajrz12ik7esfk1z",
+        "key": "description",
+        "type": "string",
+        "visible": true,
+        "locales": {
+          "zh": {
+            "name": "描述",
+            "defaultValue": "探索这个神奇的3D世界"
+          },
+          "en": {
+            "name": "Description",
+            "defaultValue": "Explore this amazing 3D world"
+          }
+        }
+      }
+    },
+    "3ckcfvf6b7zyskk8": {
+      "index": 2,
+      "data": {
+        "id": "3ckcfvf6b7zyskk8",
+        "key": "backgroundColor",
+        "type": "color",
+        "visible": true,
+        "locales": {
+          "zh": {
+            "name": "背景颜色",
+            "defaultValue": "#1a1a1a"
+          },
+          "en": {
+            "name": "Background Color",
+            "defaultValue": "#1a1a1a"
+          }
+        }
+      }
+    },
+    "4f49q5uidkcp5ak4": {
+      "index": 3,
+      "data": {
+        "id": "4f49q5uidkcp5ak4",
+        "key": "worldSize",
+        "type": "number",
+        "visible": true,
+        "locales": {
+          "zh": {
+            "name": "世界大小",
+            "defaultValue": 5
+          },
+          "en": {
+            "name": "World Size",
+            "defaultValue": 5
+          }
+        }
+      }
+    },
+    "bl0rimfebwbencoj": {
+      "index": 4,
+      "data": {
+        "id": "bl0rimfebwbencoj",
+        "key": "rotationSpeed",
+        "type": "decimal",
+        "visible": true,
+        "locales": {
+          "zh": {
+            "name": "旋转速度",
+            "defaultValue": 0.5
+          },
+          "en": {
+            "name": "Rotation Speed",
+            "defaultValue": 0.5
+          }
+        }
+      }
+    }
+  }
+} 

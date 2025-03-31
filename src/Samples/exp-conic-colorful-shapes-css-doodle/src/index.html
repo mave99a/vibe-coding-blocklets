@@ -1,0 +1,7 @@
+<css-doodle click-to-update>
+	@grid: 1x8 / 70vmin;
+	@place-cell: center;
+	@size: calc(100% - @calc(@i() - 1) * 100% / @size());
+
+	background-image: @multi(50, conic-gradient(from @r(360deg), @p(#fc0, #00f, #f7b, #09f, #000) @r(20%), transparent @lr()));
+</css-doodle>

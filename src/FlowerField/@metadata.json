@@ -1,0 +1,142 @@
+{
+  "id": "KEHGy3vdflE8JGrV",
+  "createdAt": "2025-03-20T16:01:56.655Z",
+  "updatedAt": "2025-03-21T01:24:04.008Z",
+  "name": "FlowerField",
+  "description": "A beautiful animated flower field with fireflies under a starry night sky",
+  "properties": {
+    "gs1rn5jmxfvpxptx": {
+      "index": 0,
+      "data": {
+        "id": "gs1rn5jmxfvpxptx",
+        "key": "flowerCount",
+        "type": "number",
+        "visible": true,
+        "locales": {
+          "zh": {
+            "name": "花朵数量",
+            "defaultValue": 70
+          },
+          "en": {
+            "name": "Flower Count",
+            "defaultValue": 70
+          }
+        }
+      }
+    },
+    "9ajrz12ik7esfk1z": {
+      "index": 1,
+      "data": {
+        "id": "9ajrz12ik7esfk1z",
+        "key": "fireflyCount",
+        "type": "number",
+        "visible": true,
+        "locales": {
+          "zh": {
+            "name": "萤火虫数量",
+            "defaultValue": 20
+          },
+          "en": {
+            "name": "Firefly Count",
+            "defaultValue": 20
+          }
+        }
+      }
+    },
+    "3ckcfvf6b7zyskk8": {
+      "index": 2,
+      "data": {
+        "id": "3ckcfvf6b7zyskk8",
+        "key": "starCount",
+        "type": "number",
+        "visible": true,
+        "locales": {
+          "zh": {
+            "name": "星星数量",
+            "defaultValue": 200
+          },
+          "en": {
+            "name": "Star Count",
+            "defaultValue": 200
+          }
+        }
+      }
+    },
+    "x3lqht8ikble1itx": {
+      "index": 3,
+      "data": {
+        "id": "x3lqht8ikble1itx",
+        "key": "cloudCount",
+        "type": "number",
+        "visible": true,
+        "locales": {
+          "zh": {
+            "name": "云朵数量",
+            "defaultValue": 8
+          },
+          "en": {
+            "name": "Cloud Count",
+            "defaultValue": 8
+          }
+        }
+      }
+    },
+    "q0ezdj81v0m14y5m": {
+      "index": 4,
+      "data": {
+        "id": "q0ezdj81v0m14y5m",
+        "key": "backgroundColor",
+        "type": "color",
+        "visible": true,
+        "locales": {
+          "zh": {
+            "name": "背景颜色",
+            "defaultValue": "#0a0e18"
+          },
+          "en": {
+            "name": "Background Color",
+            "defaultValue": "#0a0e18"
+          }
+        }
+      }
+    },
+    "bl0rimfebwbencoj": {
+      "index": 5,
+      "data": {
+        "id": "bl0rimfebwbencoj",
+        "key": "groundColor",
+        "type": "color",
+        "visible": true,
+        "locales": {
+          "zh": {
+            "name": "地面颜色",
+            "defaultValue": "#2d1d15"
+          },
+          "en": {
+            "name": "Ground Color",
+            "defaultValue": "#2d1d15"
+          }
+        }
+      }
+    },
+    "gioetxz8d13jabz6": {
+      "index": 6,
+      "data": {
+        "id": "gioetxz8d13jabz6",
+        "key": "fireflyColor",
+        "type": "color",
+        "visible": true,
+        "locales": {
+          "zh": {
+            "name": "萤火虫颜色",
+            "defaultValue": "#ffea00"
+          },
+          "en": {
+            "name": "Firefly Color",
+            "defaultValue": "#ffea00"
+          }
+        }
+      }
+    }
+  }
+} 

@@ -1,0 +1,142 @@
+{
+  "id": "abcdef0123456789",
+  "createdAt": "2024-03-23T12:00:00.000Z",
+  "updatedAt": "2024-03-23T12:00:00.000Z",
+  "name": "AnimatedText",
+  "description": "An animated text component with mouse pointer interaction",
+  "properties": {
+    "a1b2c3d4e5f6g7h8": {
+      "index": 0,
+      "data": {
+        "id": "a1b2c3d4e5f6g7h8",
+        "key": "line1",
+        "type": "string",
+        "visible": true,
+        "locales": {
+          "zh": {
+            "name": "第一行文本",
+            "defaultValue": "CODE"
+          },
+          "en": {
+            "name": "First Line Text",
+            "defaultValue": "CODE"
+          }
+        }
+      }
+    },
+    "i9j0k1l2m3n4o5p6": {
+      "index": 1,
+      "data": {
+        "id": "i9j0k1l2m3n4o5p6",
+        "key": "line2",
+        "type": "string",
+        "visible": true,
+        "locales": {
+          "zh": {
+            "name": "第二行文本",
+            "defaultValue": "DRIVEN"
+          },
+          "en": {
+            "name": "Second Line Text",
+            "defaultValue": "DRIVEN"
+          }
+        }
+      }
+    },
+    "q7r8s9t0u1v2w3x4": {
+      "index": 2,
+      "data": {
+        "id": "q7r8s9t0u1v2w3x4",
+        "key": "line3",
+        "type": "string",
+        "visible": true,
+        "locales": {
+          "zh": {
+            "name": "第三行文本",
+            "defaultValue": "ANIMATION"
+          },
+          "en": {
+            "name": "Third Line Text",
+            "defaultValue": "ANIMATION"
+          }
+        }
+      }
+    },
+    "y5z6a7b8c9d0e1f2": {
+      "index": 3,
+      "data": {
+        "id": "y5z6a7b8c9d0e1f2",
+        "key": "fontSize",
+        "type": "number",
+        "visible": true,
+        "locales": {
+          "zh": {
+            "name": "字体大小",
+            "defaultValue": 150
+          },
+          "en": {
+            "name": "Font Size",
+            "defaultValue": 150
+          }
+        }
+      }
+    },
+    "g3h4i5j6k7l8m9n0": {
+      "index": 4,
+      "data": {
+        "id": "g3h4i5j6k7l8m9n0",
+        "key": "primaryColor",
+        "type": "color",
+        "visible": true,
+        "locales": {
+          "zh": {
+            "name": "主要颜色",
+            "defaultValue": "#ffffff"
+          },
+          "en": {
+            "name": "Primary Color",
+            "defaultValue": "#ffffff"
+          }
+        }
+      }
+    },
+    "o1p2q3r4s5t6u7v8": {
+      "index": 5,
+      "data": {
+        "id": "o1p2q3r4s5t6u7v8",
+        "key": "secondaryColor",
+        "type": "color",
+        "visible": true,
+        "locales": {
+          "zh": {
+            "name": "次要颜色",
+            "defaultValue": "#aaaaaa"
+          },
+          "en": {
+            "name": "Secondary Color",
+            "defaultValue": "#aaaaaa"
+          }
+        }
+      }
+    },
+    "w9x0y1z2a3b4c5d6": {
+      "index": 6,
+      "data": {
+        "id": "w9x0y1z2a3b4c5d6",
+        "key": "backgroundColor",
+        "type": "color",
+        "visible": true,
+        "locales": {
+          "zh": {
+            "name": "背景颜色",
+            "defaultValue": "#000000"
+          },
+          "en": {
+            "name": "Background Color",
+            "defaultValue": "#000000"
+          }
+        }
+      }
+    }
+  }
+} 

@@ -1,0 +1,217 @@
+{
+  "id": "pS3h7FvdGpQ8Jrs2",
+  "createdAt": "2024-03-24T12:00:00.000Z",
+  "updatedAt": "2025-03-24T06:22:52.766Z",
+  "name": "ProcessSteps",
+  "description": "A step-by-step process component with interactive hover effects",
+  "properties": {
+    "aq1rn5jmxfvpxptx": {
+      "index": 0,
+      "data": {
+        "id": "aq1rn5jmxfvpxptx",
+        "key": "title",
+        "type": "string",
+        "visible": true,
+        "locales": {
+          "zh": {
+            "name": "主标题",
+            "defaultValue": "如何运作"
+          },
+          "en": {
+            "name": "Title",
+            "defaultValue": "How It Works"
+          }
+        }
+      }
+    },
+    "bq2rz12ik7esfk1z": {
+      "index": 1,
+      "data": {
+        "id": "bq2rz12ik7esfk1z",
+        "key": "subtitle",
+        "type": "string",
+        "visible": true,
+        "locales": {
+          "zh": {
+            "name": "副标题",
+            "defaultValue": "通过3个简单步骤启动您的创业项目"
+          },
+          "en": {
+            "name": "Subtitle",
+            "defaultValue": "Launch Your Startup in 3 Simple Steps"
+          }
+        }
+      }
+    },
+    "cq3vl2p9cn9ryvgh": {
+      "index": 2,
+      "data": {
+        "id": "cq3vl2p9cn9ryvgh",
+        "key": "steps",
+        "type": "array",
+        "visible": true,
+        "locales": {
+          "zh": {
+            "name": "步骤列表",
+            "defaultValue": [
+              {
+                "title": "验证您的想法",
+                "description": "获取关于市场需求、竞争对手和可行性的即时见解。"
+              },
+              {
+                "title": "品牌和命名您的创业项目",
+                "description": "生成独特的企业名称，检查域名可用性，并创建徽标。"
+              },
+              {
+                "title": "启动您的落地页",
+                "description": "立即生成专业的落地页并上线。"
+              }
+            ]
+          },
+          "en": {
+            "name": "Steps",
+            "defaultValue": {
+              "title": "",
+              "description": ""
+            }
+          }
+        },
+        "subProperties": {
+          "dq4vl2p9cn9ryvgh": {
+            "index": 0,
+            "data": {
+              "id": "dq4vl2p9cn9ryvgh",
+              "key": "title",
+              "type": "string",
+              "visible": true,
+              "locales": {
+                "zh": {
+                  "name": "步骤标题",
+                  "defaultValue": ""
+                },
+                "en": {
+                  "name": "Step Title",
+                  "defaultValue": ""
+                }
+              }
+            }
+          },
+          "eq5vl2p9cn9ryvgh": {
+            "index": 1,
+            "data": {
+              "id": "eq5vl2p9cn9ryvgh",
+              "key": "description",
+              "type": "string",
+              "visible": true,
+              "locales": {
+                "zh": {
+                  "name": "步骤描述",
+                  "defaultValue": ""
+                },
+                "en": {
+                  "name": "Step Description",
+                  "defaultValue": ""
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "fq6oj4rq1eziup1d": {
+      "index": 3,
+      "data": {
+        "id": "fq6oj4rq1eziup1d",
+        "key": "primaryColor",
+        "type": "color",
+        "visible": true,
+        "locales": {
+          "zh": {
+            "defaultValue": "#3B82F6",
+            "name": "主要颜色"
+          },
+          "en": {
+            "defaultValue": "#3B82F6",
+            "name": "Primary Color"
+          }
+        }
+      }
+    },
+    "gq7oj4rq1eziup1d": {
+      "index": 4,
+      "data": {
+        "id": "gq7oj4rq1eziup1d",
+        "key": "stepNumberBgColor",
+        "type": "color",
+        "visible": true,
+        "locales": {
+          "zh": {
+            "defaultValue": "#E0E7FF",
+            "name": "步骤编号背景色"
+          },
+          "en": {
+            "defaultValue": "#E0E7FF",
+            "name": "Step Number Background Color"
+          }
+        }
+      }
+    },
+    "hq8oj4rq1eziup1d": {
+      "index": 5,
+      "data": {
+        "id": "hq8oj4rq1eziup1d",
+        "key": "hoverScale",
+        "type": "decimal",
+        "visible": true,
+        "locales": {
+          "zh": {
+            "name": "悬停缩放比例",
+            "defaultValue": 1.2
+          },
+          "en": {
+            "name": "Hover Scale",
+            "defaultValue": 1.2
+          }
+        }
+      }
+    },
+    "iq9oj4rq1eziup1d": {
+      "index": 6,
+      "data": {
+        "id": "iq9oj4rq1eziup1d",
+        "key": "animationDuration",
+        "type": "decimal",
+        "visible": true,
+        "locales": {
+          "zh": {
+            "name": "动画持续时间（秒）",
+            "defaultValue": 0.3
+          },
+          "en": {
+            "name": "Animation Duration (seconds)",
+            "defaultValue": 0.3
+          }
+        }
+      }
+    },
+    "jq0oj4rq1eziup1d": {
+      "index": 7,
+      "data": {
+        "id": "jq0oj4rq1eziup1d",
+        "key": "maxWidth",
+        "type": "number",
+        "visible": true,
+        "locales": {
+          "zh": {
+            "name": "最大宽度（像素）",
+            "defaultValue": 1200
+          },
+          "en": {
+            "name": "Max Width (pixels)",
+            "defaultValue": 1200
+          }
+        }
+      }
+    }
+  }
+}

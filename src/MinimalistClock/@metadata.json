@@ -1,0 +1,85 @@
+{
+  "id": "KEHGy3vdflE8JGrV",
+  "createdAt": "2024-03-24T16:01:56.655Z",
+  "updatedAt": "2024-03-24T16:01:56.655Z",
+  "name": "MinimalistClock",
+  "description": "A minimalist aesthetic clock component with clean design",
+  "properties": {
+    "gs1rn5jmxfvpxptx": {
+      "index": 0,
+      "data": {
+        "id": "gs1rn5jmxfvpxptx",
+        "key": "showSeconds",
+        "type": "boolean",
+        "visible": true,
+        "locales": {
+          "zh": {
+            "name": "显示秒数",
+            "defaultValue": true
+          },
+          "en": {
+            "name": "Show Seconds",
+            "defaultValue": true
+          }
+        }
+      }
+    },
+    "9ajrz12ik7esfk1z": {
+      "index": 1,
+      "data": {
+        "id": "9ajrz12ik7esfk1z",
+        "key": "showDate",
+        "type": "boolean",
+        "visible": true,
+        "locales": {
+          "zh": {
+            "name": "显示日期",
+            "defaultValue": true
+          },
+          "en": {
+            "name": "Show Date",
+            "defaultValue": true
+          }
+        }
+      }
+    },
+    "3ckcfvf6b7zyskk8": {
+      "index": 2,
+      "data": {
+        "id": "3ckcfvf6b7zyskk8",
+        "key": "textColor",
+        "type": "color",
+        "visible": true,
+        "locales": {
+          "zh": {
+            "name": "文字颜色",
+            "defaultValue": "#333333"
+          },
+          "en": {
+            "name": "Text Color",
+            "defaultValue": "#333333"
+          }
+        }
+      }
+    },
+    "x3lqht8ikble1itx": {
+      "index": 3,
+      "data": {
+        "id": "x3lqht8ikble1itx",
+        "key": "backgroundColor",
+        "type": "color",
+        "visible": true,
+        "locales": {
+          "zh": {
+            "name": "背景颜色",
+            "defaultValue": "#ffffff"
+          },
+          "en": {
+            "name": "Background Color",
+            "defaultValue": "#ffffff"
+          }
+        }
+      }
+    }
+  }
+} 

@@ -1,0 +1,161 @@
+{
+  "id": "wavy-lines-component",
+  "createdAt": "2024-03-29T22:00:00.000Z",
+  "updatedAt": "2024-03-29T22:00:00.000Z",
+  "name": "WavyLines",
+  "description": "A beautiful interactive wavy lines animation that responds to mouse movement",
+  "properties": {
+    "lineColor": {
+      "index": 0,
+      "data": {
+        "id": "line-color-id",
+        "key": "lineColor",
+        "type": "color",
+        "visible": true,
+        "locales": {
+          "zh": {
+            "name": "线条颜色",
+            "defaultValue": "#000000"
+          },
+          "en": {
+            "name": "Line Color",
+            "defaultValue": "#000000"
+          }
+        }
+      }
+    },
+    "lineWidth": {
+      "index": 1,
+      "data": {
+        "id": "line-width-id",
+        "key": "lineWidth",
+        "type": "number",
+        "visible": true,
+        "locales": {
+          "zh": {
+            "name": "线条宽度",
+            "defaultValue": 1
+          },
+          "en": {
+            "name": "Line Width",
+            "defaultValue": 1
+          }
+        }
+      }
+    },
+    "xGap": {
+      "index": 2,
+      "data": {
+        "id": "x-gap-id",
+        "key": "xGap",
+        "type": "number",
+        "visible": true,
+        "locales": {
+          "zh": {
+            "name": "水平间距",
+            "defaultValue": 10
+          },
+          "en": {
+            "name": "Horizontal Gap",
+            "defaultValue": 10
+          }
+        }
+      }
+    },
+    "yGap": {
+      "index": 3,
+      "data": {
+        "id": "y-gap-id",
+        "key": "yGap",
+        "type": "number",
+        "visible": true,
+        "locales": {
+          "zh": {
+            "name": "垂直间距",
+            "defaultValue": 32
+          },
+          "en": {
+            "name": "Vertical Gap",
+            "defaultValue": 32
+          }
+        }
+      }
+    },
+    "waveStrength": {
+      "index": 4,
+      "data": {
+        "id": "wave-strength-id",
+        "key": "waveStrength",
+        "type": "number",
+        "visible": true,
+        "locales": {
+          "zh": {
+            "name": "波浪强度",
+            "defaultValue": 32
+          },
+          "en": {
+            "name": "Wave Strength",
+            "defaultValue": 32
+          }
+        }
+      }
+    },
+    "cursorRadius": {
+      "index": 5,
+      "data": {
+        "id": "cursor-radius-id",
+        "key": "cursorRadius",
+        "type": "number",
+        "visible": true,
+        "locales": {
+          "zh": {
+            "name": "鼠标影响半径",
+            "defaultValue": 175
+          },
+          "en": {
+            "name": "Cursor Influence Radius",
+            "defaultValue": 175
+          }
+        }
+      }
+    },
+    "cursorStrength": {
+      "index": 6,
+      "data": {
+        "id": "cursor-strength-id",
+        "key": "cursorStrength",
+        "type": "number",
+        "visible": true,
+        "locales": {
+          "zh": {
+            "name": "鼠标影响强度",
+            "defaultValue": 0.00065
+          },
+          "en": {
+            "name": "Cursor Influence Strength",
+            "defaultValue": 0.00065
+          }
+        }
+      }
+    },
+    "waveSpeed": {
+      "index": 7,
+      "data": {
+        "id": "wave-speed-id",
+        "key": "waveSpeed",
+        "type": "number",
+        "visible": true,
+        "locales": {
+          "zh": {
+            "name": "波浪速度",
+            "defaultValue": 0.0125
+          },
+          "en": {
+            "name": "Wave Speed",
+            "defaultValue": 0.0125
+          }
+        }
+      }
+    }
+  }
+} 

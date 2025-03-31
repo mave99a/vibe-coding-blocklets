@@ -1,0 +1,180 @@
+{
+  "id": "LEDClockComponent",
+  "createdAt": "2024-03-23T08:00:00.000Z",
+  "updatedAt": "2025-03-23T09:20:30.481Z",
+  "name": "LEDClock",
+  "description": "LED风格的时钟组件，支持时区设置",
+  "properties": {
+    "abcdef1234567890": {
+      "index": 0,
+      "data": {
+        "id": "abcdef1234567890",
+        "key": "title",
+        "type": "string",
+        "visible": true,
+        "locales": {
+          "zh": {
+            "name": "标题",
+            "defaultValue": "LED时钟"
+          },
+          "en": {
+            "name": "Title",
+            "defaultValue": "LED Clock"
+          }
+        }
+      }
+    },
+    "bcdef1234567891a": {
+      "index": 1,
+      "data": {
+        "id": "bcdef1234567891a",
+        "key": "showTitle",
+        "type": "boolean",
+        "visible": true,
+        "locales": {
+          "zh": {
+            "name": "显示标题",
+            "defaultValue": true
+          },
+          "en": {
+            "name": "Show Title",
+            "defaultValue": true
+          }
+        }
+      }
+    },
+    "cdef1234567891ab": {
+      "index": 2,
+      "data": {
+        "id": "cdef1234567891ab",
+        "key": "digitColor",
+        "type": "color",
+        "visible": true,
+        "locales": {
+          "zh": {
+            "name": "数字颜色",
+            "defaultValue": "rgb(255, 0, 0)"
+          },
+          "en": {
+            "name": "Digit Color",
+            "defaultValue": "rgb(255, 0, 0)"
+          }
+        }
+      }
+    },
+    "def1234567891abc": {
+      "index": 3,
+      "data": {
+        "id": "def1234567891abc",
+        "key": "backgroundColor",
+        "type": "color",
+        "visible": true,
+        "locales": {
+          "zh": {
+            "name": "背景颜色",
+            "defaultValue": "rgb(0, 0, 0)"
+          },
+          "en": {
+            "name": "Background Color",
+            "defaultValue": ""
+          }
+        }
+      }
+    },
+    "ef1234567891abcd": {
+      "index": 4,
+      "data": {
+        "id": "ef1234567891abcd",
+        "key": "timezone",
+        "type": "string",
+        "visible": false,
+        "locales": {
+          "zh": {
+            "name": "时区",
+            "defaultValue": "Asia/Shanghai"
+          },
+          "en": {
+            "name": "Timezone",
+            "defaultValue": "America/New_York"
+          }
+        }
+      }
+    },
+    "f1234567891abcde": {
+      "index": 5,
+      "data": {
+        "id": "f1234567891abcde",
+        "key": "showSeconds",
+        "type": "boolean",
+        "visible": true,
+        "locales": {
+          "zh": {
+            "name": "显示秒数",
+            "defaultValue": true
+          },
+          "en": {
+            "name": "Show Seconds",
+            "defaultValue": true
+          }
+        }
+      }
+    },
+    "g1234567891abcdf": {
+      "index": 6,
+      "data": {
+        "id": "g1234567891abcdf",
+        "key": "use24HourFormat",
+        "type": "boolean",
+        "visible": true,
+        "locales": {
+          "zh": {
+            "name": "24小时制",
+            "defaultValue": true
+          },
+          "en": {
+            "name": "24-Hour Format",
+            "defaultValue": true
+          }
+        }
+      }
+    },
+    "h1234567891abcdg": {
+      "index": 7,
+      "data": {
+        "id": "h1234567891abcdg",
+        "key": "size",
+        "type": "number",
+        "visible": true,
+        "locales": {
+          "zh": {
+            "name": "大小",
+            "defaultValue": 48
+          },
+          "en": {
+            "name": "Size",
+            "defaultValue": 48
+          }
+        }
+      }
+    },
+    "i1234567891abcdh": {
+      "index": 8,
+      "data": {
+        "id": "i1234567891abcdh",
+        "key": "segmentThickness",
+        "type": "number",
+        "visible": true,
+        "locales": {
+          "zh": {
+            "name": "段厚度",
+            "defaultValue": 6
+          },
+          "en": {
+            "name": "Segment Thickness",
+            "defaultValue": 6
+          }
+        }
+      }
+    }
+  }
+}
