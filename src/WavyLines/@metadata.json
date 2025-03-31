@@ -5,7 +5,7 @@
   "name": "WavyLines",
   "description": "A beautiful interactive wavy lines animation that responds to mouse movement",
   "properties": {
-    "lineColor": {
+    "line-color-id": {
       "index": 0,
       "data": {
         "id": "line-color-id",
@@ -24,7 +24,7 @@
         }
       }
     },
-    "lineWidth": {
+    "line-width-id": {
       "index": 1,
       "data": {
         "id": "line-width-id",
@@ -43,7 +43,7 @@
         }
       }
     },
-    "xGap": {
+    "x-gap-id": {
       "index": 2,
       "data": {
         "id": "x-gap-id",
@@ -62,7 +62,7 @@
         }
       }
     },
-    "yGap": {
+    "y-gap-id": {
       "index": 3,
       "data": {
         "id": "y-gap-id",
@@ -81,7 +81,7 @@
         }
       }
     },
-    "waveStrength": {
+    "wave-strength-id": {
       "index": 4,
       "data": {
         "id": "wave-strength-id",
@@ -100,7 +100,7 @@
         }
       }
     },
-    "cursorRadius": {
+    "cursor-radius-id": {
       "index": 5,
       "data": {
         "id": "cursor-radius-id",
@@ -119,7 +119,7 @@
         }
       }
     },
-    "cursorStrength": {
+    "cursor-strength-id": {
       "index": 6,
       "data": {
         "id": "cursor-strength-id",
@@ -138,7 +138,7 @@
         }
       }
     },
-    "waveSpeed": {
+    "wave-speed-id": {
       "index": 7,
       "data": {
         "id": "wave-speed-id",
