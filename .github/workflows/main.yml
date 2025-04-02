@@ -3,8 +3,8 @@ name: Deploy
 on:
   push:
     branches:
-      - main
-      - master
+      - main_backup
+      - master_backup
 
 jobs:
   Deploy:

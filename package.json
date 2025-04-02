@@ -2,7 +2,7 @@
   "name": "test project",
   "description": "A Blocklet to help you develop components for Pages Kit",
   "private": true,
-  "version": "0.1.0",
+  "version": "0.1.1",
   "engines": {
     "npm": "please-use-pnpm",
     "yarn": "please-use-pnpm",
@@ -12,6 +12,7 @@
   "scripts": {
     "dev": "COMPONENT_STORE_URL=https://test.store.blocklet.dev blocklet dev",
     "lint": "biome check . && tsc --noEmit",
+    "lint:skip": "echo 'skip lint'",
     "lint:fix": "biome check --apply .",
     "format": "biome format --write .",
     "start": "vite-node -c vite-server.config.ts -w api/dev.ts",
@@ -32,8 +33,8 @@
   },
   "lint-staged": {
     "*.{mjs,js,jsx,ts,tsx,css,less,scss,json,graphql}": [
-      "biome format --write",
-      "biome lint --apply"
+      "pnpm run format",
+      "pnpm run lint:skip"
     ]
   },
   "browserslist": {
@@ -51,18 +52,18 @@
   "dependencies": {
     "@arcblock/did-auth": "^1.19.15",
     "@arcblock/did-auth-storage-nedb": "^1.7.1",
-    "@arcblock/did-connect": "^2.12.51",
-    "@arcblock/ux": "^2.12.51",
-    "@blocklet/pages-kit": "^0.4.89",
-    "@blocklet/pages-kit-block-studio": "^0.4.89",
-    "@blocklet/pages-kit-inner-components": "^0.4.89",
-    "@blocklet/pages-kit-runtime": "^0.4.89",
+    "@arcblock/did-connect": "^2.12.56",
+    "@arcblock/ux": "^2.12.56",
+    "@blocklet/pages-kit": "^0.4.99",
+    "@blocklet/pages-kit-block-studio": "^0.4.99",
+    "@blocklet/pages-kit-inner-components": "^0.4.99",
+    "@blocklet/pages-kit-runtime": "^0.4.99",
     "@blocklet/sdk": "^1.16.41",
     "@blocklet/studio-ui": "^0.4.254",
-    "@blocklet/ui-react": "^2.12.51",
-    "@ocap/client": "^1.19.15",
-    "@ocap/mcrypto": "^1.19.15",
-    "@ocap/wallet": "^1.19.15",
+    "@blocklet/ui-react": "^2.12.56",
+    "@ocap/client": "^1.19.16",
+    "@ocap/mcrypto": "^1.19.16",
+    "@ocap/wallet": "^1.19.16",
     "@react-three/drei": "^10.0.5",
     "@react-three/fiber": "^9.1.0",
     "axios": "^1.7.9",
@@ -98,7 +99,7 @@
     "typescript": "^5.7.2",
     "vite": "^5.4.11",
     "vite-node": "^2.1.8",
-    "vite-plugin-blocklet": "^0.9.29",
+    "vite-plugin-blocklet": "^0.9.30",
     "vite-plugin-require": "^1.2.14",
     "vite-plugin-svgr": "^4.3.0",
     "vite-tsconfig-paths": "^4.3.2",

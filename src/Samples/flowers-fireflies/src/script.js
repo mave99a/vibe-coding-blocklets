@@ -1,4 +1,4 @@
-document.addEventListener("DOMContentLoaded", function () {
+document.addEventListener("DOMContentLoaded", () => {
 	const primes = [3, 5, 7, 11, 13, 17];
 
 	const flowerStyles = {

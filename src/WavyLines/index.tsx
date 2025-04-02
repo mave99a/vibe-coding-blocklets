@@ -21,21 +21,21 @@ interface PointCoords {
 }
 
 interface BlockProps {
-  /** @description id: lineColor | type: color | visible: true */
+  /** @description id: line-color-id | type: color | visible: true */
   lineColor?: string;
-  /** @description id: lineWidth | type: number | visible: true */
+  /** @description id: line-width-id | type: number | visible: true */
   lineWidth?: number;
-  /** @description id: xGap | type: number | visible: true */
+  /** @description id: x-gap-id | type: number | visible: true */
   xGap?: number;
-  /** @description id: yGap | type: number | visible: true */
+  /** @description id: y-gap-id | type: number | visible: true */
   yGap?: number;
-  /** @description id: waveStrength | type: number | visible: true */
+  /** @description id: wave-strength-id | type: number | visible: true */
   waveStrength?: number;
-  /** @description id: cursorRadius | type: number | visible: true */
+  /** @description id: cursor-radius-id | type: number | visible: true */
   cursorRadius?: number;
-  /** @description id: cursorStrength | type: number | visible: true */
+  /** @description id: cursor-strength-id | type: number | visible: true */
   cursorStrength?: number;
-  /** @description id: waveSpeed | type: number | visible: true */
+  /** @description id: wave-speed-id | type: number | visible: true */
   waveSpeed?: number;
 }
 
@@ -55,11 +55,7 @@ function noise(x: number, y: number): number {
   const C = (Math.sin(X * 12.9898 + (Y + 1) * 78.233) * 43758.5453) % 1;
   const D = (Math.sin((X + 1) * 12.9898 + (Y + 1) * 78.233) * 43758.5453) % 1;
 
-  return lerp(
-    lerp(A, B, u),
-    lerp(C, D, u),
-    v
-  );
+  return lerp(lerp(A, B, u), lerp(C, D, u), v);
 }
 
 function fade(t: number): number {
@@ -147,11 +143,7 @@ export default function WavyLines({
       lines.forEach((points: Point[]) => {
         points.forEach((p: Point) => {
           // Wave movement
-          const move =
-            noise(
-              (p.x + time * waveSpeed) * 0.002,
-              (p.y + time * 0.005) * 0.0015
-            ) * 12;
+          const move = noise((p.x + time * waveSpeed) * 0.002, (p.y + time * 0.005) * 0.0015) * 12;
           p.wave.x = Math.cos(move) * waveStrength;
           p.wave.y = Math.sin(move) * (waveStrength / 2);
 
@@ -326,4 +318,4 @@ export default function WavyLines({
       }}
     />
   );
-} 
+}
