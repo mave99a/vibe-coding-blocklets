@@ -1,6 +1,6 @@
-import React, { useRef, Suspense } from 'react';
+import { Box, OrbitControls, PerspectiveCamera } from '@react-three/drei';
 import { Canvas, useFrame } from '@react-three/fiber';
-import { OrbitControls, Box, PerspectiveCamera } from '@react-three/drei';
+import React, { useRef, Suspense } from 'react';
 import * as THREE from 'three';
 
 interface BlockProps {

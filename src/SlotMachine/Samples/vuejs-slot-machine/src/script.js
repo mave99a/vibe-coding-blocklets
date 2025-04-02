@@ -1,7 +1,6 @@
 Vue.component('slot-reel', {
   props: ['value', 'canlock'],
-  data: function() {
-    return {
+  data: () => ({
       momentum: null,
       audio: {
         spin: new Audio('https://freesound.org/data/previews/120/120373_824230-lq.mp3'),
@@ -44,12 +43,11 @@ Vue.component('slot-reel', {
       tile4Index: 3,
       tile5Index: 4,
       locked: false
-    }
-  },
+    }),
   beforeMount: function () {
     // Build up the reelTileData array with random tiles  
-    let frs = []
-    let count = this.reelTileCount
+    const frs = []
+    const count = this.reelTileCount
     this.audio.spin.volume = 0.3
     this.audio.spinEnd.volume = 0.8
     this.audio.lock.volume = 0.2
@@ -63,7 +61,7 @@ Vue.component('slot-reel', {
     // }
     
     // Method 2, sort on value, use index to determine entry count, shuffle
-    let reelSourceData = this.reelSourceData.slice(0)
+    const reelSourceData = this.reelSourceData.slice(0)
     reelSourceData.sort((a, b) => b.value - a.value)
     reelSourceData.forEach((sd, i) => {
       let times = i + 1 + i // 0+1+0=1, 3+2+3=8
@@ -163,8 +161,7 @@ Vue.component('slot-reel', {
 
 
 Vue.component('slot-machine', {
-  data: function() {
-    return {
+  data: () => ({
       spend: 6,
       credits: 6,
       win: 0,
@@ -176,9 +173,8 @@ Vue.component('slot-machine', {
         insertCoin: new Audio('https://freesound.org/data/previews/276/276091_5123851-lq.mp3'),
         bigwin: new Audio('https://freesound.org/data/previews/270/270319_5123851-lq.mp3')
       }
-    }
-  },
-  beforeMount: function () {},
+    }),
+  beforeMount: () => {},
   mounted: function() {
     window.addEventListener('keydown', this.keydown)
   },

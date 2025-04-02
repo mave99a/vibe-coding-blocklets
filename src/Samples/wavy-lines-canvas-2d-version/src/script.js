@@ -211,7 +211,7 @@ class AWaves extends HTMLElement {
     ctx.strokeStyle = "black";
 
     lines.forEach((points, lIndex) => {
-      let p1 = moved(points[0], false);
+      const p1 = moved(points[0], false);
 
       ctx.moveTo(p1.x, p1.y);
 
