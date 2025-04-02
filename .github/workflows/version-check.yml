@@ -8,8 +8,8 @@ on:
       - edited
       - synchronize
     branches:
-      - main
-      - master
+      - main_backup
+      - master_backup
 jobs:
   main:
     runs-on: ubuntu-latest
