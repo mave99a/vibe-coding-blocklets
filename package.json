@@ -8,8 +8,7 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "blocklet component dev",
     "dev": "blocklet component dev",
-    "update:deps": "npx -y taze -f -r -w -n '/arcblock|ocap|abtnode|blocklet|did-connect|did-comment|nedb/' latest && pnpm install && pnpm run deduplicate",
-    "deduplicate": "pnpm dedupe"
+    "update:deps": "blocklet component update"
   },
   "lint-staged": {
     "*.{js,jsx,ts,tsx}": [
