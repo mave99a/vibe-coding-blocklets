@@ -1,7 +1,7 @@
 {
   "id": "cae8s84jdkfw93lm",
   "createdAt": "2024-06-16T10:00:00.000Z",
-  "updatedAt": "2024-06-16T10:00:00.000Z",
+  "updatedAt": "2025-05-09T10:11:01.920Z",
   "name": "ConicColorfulShapes",
   "description": "A configurable CSS-doodle component with colorful conic gradients",
   "properties": {
@@ -92,21 +92,41 @@
           "zh": {
             "name": "颜色列表",
             "defaultValue": [
-              {"colorHex": "#fc0"},
-              {"colorHex": "#00f"},
-              {"colorHex": "#f7b"},
-              {"colorHex": "#09f"},
-              {"colorHex": "#000"}
+              {
+                "colorHex": "#fc0"
+              },
+              {
+                "colorHex": "#00f"
+              },
+              {
+                "colorHex": "#f7b"
+              },
+              {
+                "colorHex": "#09f"
+              },
+              {
+                "colorHex": "#000"
+              }
             ]
           },
           "en": {
             "name": "Color List",
             "defaultValue": [
-              {"colorHex": "#fc0"},
-              {"colorHex": "#00f"},
-              {"colorHex": "#f7b"},
-              {"colorHex": "#09f"},
-              {"colorHex": "#000"}
+              {
+                "colorHex": "#fc0"
+              },
+              {
+                "colorHex": "#00f"
+              },
+              {
+                "colorHex": "#f7b"
+              },
+              {
+                "colorHex": "#09f"
+              },
+              {
+                "colorHex": "#000"
+              }
             ]
           }
         },
@@ -172,4 +192,4 @@
       }
     }
   }
-} 
+}
